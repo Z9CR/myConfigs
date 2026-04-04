@@ -1,0 +1,55 @@
+# 设置主题
+theme = "ayu_mirage"
+
+# 编辑器设置
+[editor]
+auto-completion = true
+line-number = "relative"
+mouse = true
+rulers = [120]
+cursorline = true
+bufferline = "always"
+color-modes = true
+completion-trigger-len = 1
+idle-timeout = 0
+gutters = ["diagnostics", "diff", "line-numbers", "spacer"]
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+
+[editor.whitespace.characters]
+space = "·"
+tab = "→"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+# 缩进提示线
+[editor.indent-guides]
+render = true
+skip-levels = 1
+
+# 设置光标样式
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+separator = "|"
+mode.normal = "<Normal>"
+mode.insert = "<Insert>"
+mode.select = "<Selcet>"
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+
+[editor.soft-wrap]
+enable = true
